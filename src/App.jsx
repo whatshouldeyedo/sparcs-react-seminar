@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import pepeImage from './assets/pepe.jpg';
 
 function App() {
   const [todos, setTodos] = useState(() => {
@@ -41,7 +42,8 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Todo List</h1>
+      <h1>유태영의 Todo List</h1>
+      <img src={pepeImage} alt="Pepe" className="pepe-image" />
       <div className="todo-input">
         <input
           type="text"
